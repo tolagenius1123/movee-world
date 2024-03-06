@@ -4,10 +4,17 @@
 
 📌 Follow these steps in order:
 
-🚀 Navigate to code on this repository page and download the zip folder of this application. <br>
-🚀 When download is completed, extract the folder and open with visual studio code or any other code editor. <br>
-🚀 Next, open the terminal on your code editor, make sure the path is correct, enter this command "npm install" to download all the node packages and dependencies. <br>
-🚀 When download is completed successfully, enter this command "npm run dev" and navigate to the url on the terminal to view the app.
+🚀 Navigate to code on this repository page and download the zip folder of this application. 
+<br>
+<br>
+🚀 When download is completed, extract the folder and open with visual studio code or any other code editor. 
+<br>
+<br>
+🚀 Next, open the terminal on your code editor, make sure the path is correct, enter this command "npm install" to download      all the node packages and dependencies. 
+<br>
+<br>
+🚀 When download is completed successfully, enter this command "npm run dev" and navigate to the url on the terminal to view 
+    the app.
 
 Enjoy😊👍.
 
