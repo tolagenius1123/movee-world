@@ -8,7 +8,7 @@ import MovieList from "../movielist/MovieList";
 
 const Search = () => {
 	const [searchedResults, setSearchResults] = useState<MoviesTypes[]>();
-	const showAll: boolean = true;
+	const [showAll, setShowAll] = useState<boolean>(false);
 
 	const { searchText } = useParams();
 
@@ -36,6 +36,7 @@ const Search = () => {
 						data={searchedResults}
 						route="/"
 						isHidden={showAll}
+						setHidden={setShowAll}
 					/>
 				)}
 			</div>

@@ -7,7 +7,7 @@ import { MoviesTypes } from "../../types";
 
 const Trending = () => {
 	const [trendingList, setTrendingList] = useState<MoviesTypes[]>([]);
-	const showAll: boolean = true;
+	const [showAll, setShowAll] = useState<boolean>(false);
 
 	const getTrendingMovies = async () => {
 		try {
@@ -31,6 +31,7 @@ const Trending = () => {
 					data={trendingList}
 					route="/trending"
 					isHidden={showAll}
+					setHidden={setShowAll}
 				/>
 			</div>
 		</div>
