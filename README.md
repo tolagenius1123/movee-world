@@ -1,11 +1,13 @@
 # Welcome to Moovee World
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rule.
+This template provides a minimal guide to get Movee World application to run on your local server.
 
-Currently, two official plugins are available:
+Follow these steps in order:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navigate to code on this repository page and download the zip folder of this application.
+- When download is completed, extract the folder and open with visual studio code or any other code editor.
+- Next, open the terminal on your code editor, make sure the path is correct, enter this command "npm install" to download all the node packages and dependencies.
+- When download is completed successfully, enter this command "npm run dev" and navigate to the url on the terminal to view the app.
 
 ## Expanding the ESLint configuration
 
