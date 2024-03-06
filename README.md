@@ -2,7 +2,7 @@
 
 💥 This template provides a minimal guide to get Movee World application to run on your local server.
 
-📌 Follow these steps in order:
+ ## Follow these steps in order:
 
 🚀 Navigate to code on this repository page and download the zip folder of this application. 
 <br>
