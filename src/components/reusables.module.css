@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+/* NAVBAR */
+
+.nav {
+	height: 70px;
+	width: 100%;
+	background: #12372a;
+	color: #f6f5f5;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	text-decoration: none;
+	color: #f0cfcf;
+}
+
+.logoIcon {
+	height: 30px;
+	width: 30px;
+}
+
+.logoText {
+	/* font-family: "Sacramento", cursive; */
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	background: white;
+	padding: 2px;
+	gap: 3px;
+	border-radius: 20px;
+	width: 500px;
+	justify-content: space-between;
+}
+
+.input {
+	outline: none;
+	padding: 0px 3px;
+	font-size: 14px;
+	width: 400px;
+	border: none;
+	margin-left: 20px;
+}
+
+.btn {
+	background: #12372a;
+	color: #f6f5f5;
+	border: none;
+	border-radius: 50%;
+	padding: 8px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.btn:hover {
+	color: #f0cfcf;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.profileIcon {
+	height: 20px;
+	width: 20px;
+	color: #f6f5f5;
+}
+
+.profileLink {
+	text-decoration: none;
+	color: #f6f5f5;
+	font-size: 14px;
+}
+
+/* MOVIE CARD */
+
+.card {
+	height: auto;
+	width: 80%;
+	border-radius: 10px;
+	margin: 0px 40px 40px 0px;
+}
+
+.image {
+	height: 300px;
+	width: 100%;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.image:hover {
+	transform: scale(1.05);
+}
+
+.title {
+	color: #12372a;
+	font-weight: 600;
+}
+
+.info {
+	color: #12372a;
+	font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+	.profile {
+		display: none;
+	}
+
+	.nav {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.nav {
+		height: 140px;
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.card {
+		height: auto;
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.image {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.search {
+		width: 400px;
+	}
+
+	.input {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.search {
+		width: 300px;
+	}
+
+	.input {
+		width: 250px;
+	}
+
+	.title {
+		color: #12372a;
+		font-weight: 600;
+		margin-top: 10px;
+	}
+}
