@@ -8,7 +8,7 @@ import { MoviesTypes } from "../../types";
 const Popular = () => {
 	const [popularList, setPopularList] = useState<MoviesTypes[]>([]);
 
-	const [showAll, setShowAll] = useState<boolean>(false);
+	const showAll: boolean = true;
 
 	const getPopularMovies = async () => {
 		try {
@@ -32,7 +32,6 @@ const Popular = () => {
 					data={popularList}
 					route="/popular"
 					isHidden={showAll}
-					setHidden={setShowAll}
 				/>
 			</div>
 		</div>

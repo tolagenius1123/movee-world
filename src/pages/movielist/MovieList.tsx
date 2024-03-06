@@ -9,16 +9,9 @@ type MovieListProps = {
 	data: MoviesTypes[];
 	route: string;
 	isHidden: boolean;
-	setHidden: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const MovieList = ({
-	heading,
-	data,
-	route,
-	isHidden,
-	setHidden,
-}: MovieListProps) => {
+const MovieList = ({ heading, data, route, isHidden }: MovieListProps) => {
 	const selectedMovies = data.slice(0, 8);
 
 	return (
@@ -29,11 +22,7 @@ const MovieList = ({
 					""
 				) : (
 					<div className={styles.link}>
-						<Link
-							to={route}
-							className={styles.href}
-							onClick={() => setHidden(!isHidden)}
-						>
+						<Link to={route} className={styles.href}>
 							View All
 						</Link>
 						<FaAngleRight className={styles.icon} />

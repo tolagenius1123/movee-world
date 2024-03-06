@@ -8,14 +8,13 @@ import MovieList from "../movielist/MovieList";
 
 const Search = () => {
 	const [searchedResults, setSearchResults] = useState<MoviesTypes[]>();
-	const [showAll, setShowAll] = useState<boolean>(false);
+	const showAll: boolean = true;
 
 	const { searchText } = useParams();
 
 	const getSearchResults = async (text: string | undefined) => {
 		try {
 			const res = await searchForMovie(text);
-			console.log(res);
 			setSearchResults(res);
 		} catch (error) {
 			console.log(error);
@@ -36,7 +35,6 @@ const Search = () => {
 						data={searchedResults}
 						route="/"
 						isHidden={showAll}
-						setHidden={setShowAll}
 					/>
 				)}
 			</div>

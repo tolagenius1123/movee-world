@@ -13,7 +13,7 @@ const Home = () => {
 	const [trendingList, setTrendingList] = useState<MoviesTypes[]>([]);
 	const [popularList, setPopularList] = useState<MoviesTypes[]>([]);
 	const [seriesList, setSeriesList] = useState<MoviesTypes[]>([]);
-	const [showAll, setShowAll] = useState<boolean>(false);
+	const showAll: boolean = false;
 
 	const getTrendingMovies = async () => {
 		try {
@@ -57,21 +57,18 @@ const Home = () => {
 					data={trendingList}
 					route="/trending"
 					isHidden={showAll}
-					setHidden={setShowAll}
 				/>
 				<MovieList
 					heading="Popular Movies"
 					data={popularList}
 					route="/popular"
 					isHidden={showAll}
-					setHidden={setShowAll}
 				/>
 				<MovieList
 					heading="TV Shows"
 					data={seriesList}
 					route="/series"
 					isHidden={showAll}
-					setHidden={setShowAll}
 				/>
 			</div>
 		</div>

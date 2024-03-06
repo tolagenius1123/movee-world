@@ -7,13 +7,11 @@ import { MoviesTypes } from "../../types";
 
 const Series = () => {
 	const [seriesList, setSeriesList] = useState<MoviesTypes[]>([]);
-	const [showAll, setShowAll] = useState<boolean>(false);
+	const showAll: boolean = true;
 
 	const getTvSeries = async () => {
 		try {
 			const res = await getSeries();
-			console.log(res);
-
 			setSeriesList(res.results);
 		} catch (error) {
 			console.log(error);
@@ -33,7 +31,6 @@ const Series = () => {
 					data={seriesList}
 					route="/series"
 					isHidden={showAll}
-					setHidden={setShowAll}
 				/>
 			</div>
 		</div>
